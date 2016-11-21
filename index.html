@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hello World!</title>
+      <script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hibutton").click(function(){
+        $("#message").toggle();
+    });
+});
+</script>
+      <style>
+          #message
+          {
+              display: none;
+          }
+
+      </style>
+       </head>
+    <body>
+        <h1>Click the button to say hello and we'll say Hi back!</h1>
+        <input type="button" id="hibutton" class="btn-default" value="Hello!">
+        <h1 id="message">HI THERE!</h1>
+
+        
+    </body>
+  </html>
